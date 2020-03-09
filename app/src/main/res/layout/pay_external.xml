@@ -1,0 +1,86 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Switch
+            android:id="@+id/sandbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginEnd="10dp"
+            android:text="@string/enable_sandbox" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="14dp">
+
+            <TextView
+                android:id="@+id/labelParams"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_params"
+                android:textColor="@android:color/black" />
+
+            <EditText
+                android:id="@+id/params"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:ems="10"
+                android:hint="@string/param_hint"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:lines="1"
+                android:textColorHint="@android:color/darker_gray" />
+        </TableRow>
+
+        <Button
+            android:id="@+id/payV2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:onClick="payV2"
+            android:text="@string/pay_with_alipay"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/authV2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:onClick="authV2"
+            android:text="@string/auth_with_alipay"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/h5pay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:onClick="h5Pay"
+            android:text="@string/web_to_native"
+            android:textAllCaps="false" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:onClick="showSdkVersion"
+            android:text="@string/check_sdk_version"
+            android:textAllCaps="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:text="@string/demo_info_text"
+            android:textColor="#F4333C" />
+    </LinearLayout>
+
+</ScrollView>
